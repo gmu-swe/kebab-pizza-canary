@@ -1,0 +1,8 @@
+before_install:
+- wget https://www.dropbox.com/s/pgxsksvtl3kxbcm/kebab-pizza-apache-maven-3.5.4.tgz?dl=1
+- unzip apache-maven-3.5.4.zip
+- export M2_HOME=$PWD/apache-maven-3.5.4
+- export PATH=$M2_HOME/bin:$PATH
+language: java
+notifications:
+  email: false
